@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Hyohyoju
+- 👋 Hi, I’m @Hyohyoju This App is QuoteApp using SwiftUi. If you push the button, the random character and quote is on screen.
 - 👀 I’m interested in SwiftUi & Spring boot
 - 📫 How to reach me instagram @rizoo_coding_
 
