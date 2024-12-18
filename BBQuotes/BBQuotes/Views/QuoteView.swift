@@ -13,6 +13,8 @@ struct QuoteView: View {
     let vm = ViewModel()
     let show: String
 
+    @State var showCharacterInfo = false
+    
     // MARK: - BODY
     var body: some View {
         GeometryReader { geo in
@@ -58,7 +60,9 @@ struct QuoteView: View {
                             }
                             .frame(width: geo.size.width/1.1, height: geo.size.height/1.8)
                             .clipShape(.rect(cornerRadius: 50))
-                            
+                            .onTapGesture {
+                                showCharacterInfo.toggle()
+                            }
                         case .failed(let error):
                             Text(error.localizedDescription)
                         }
@@ -85,6 +89,9 @@ struct QuoteView: View {
             .frame(width: geo.size.width, height: geo.size.height)
         }
         .ignoresSafeArea()
+        .sheet(isPresented: $showCharacterInfo){
+            CharacterView(character: vm.character, show: show)
+        }
     }
 }
 
