@@ -1,4 +1,6 @@
-- 👋 Hi, I’m @Hyohyoju This App is QuoteApp using SwiftUi. If you push the button, the random character and quote is on screen.
+- 👋 Hi, I’m @Hyohyoju This App is QuoteApp using SwiftUi.
+- If you push the button, the random character and quote is on screen.
+  This has two version, one for "breaking bad", and other is "Better call Saul"
 - 👀 I’m interested in SwiftUi & Spring boot
 - 📫 How to reach me instagram @rizoo_coding_
 
