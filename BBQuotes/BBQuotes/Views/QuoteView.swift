@@ -33,7 +33,7 @@ struct QuoteView: View {
                         case .fetching:
                             ProgressView()
                         case .success:
-                            Text("\"\(vm.quote)\"")
+                            Text("\"\(vm.quote.quote)\"")
                                 .minimumScaleFactor(0.5)
                                 .multilineTextAlignment(.center)
                                 .foregroundStyle(.white)
